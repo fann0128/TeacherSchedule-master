@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.yangf.table.MainActivity">
+
+    <TextView android:id="@+id/test_empty"
+        android:text="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/course_text_view_bg"  />
+    <TextView android:id="@+id/test_monday_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mon"
+        android:layout_toRightOf="@id/test_empty"
+        android:background="@drawable/course_text_view_bg"
+        />
+    <TextView android:id="@+id/test_tuesday_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tue"
+        android:layout_toRightOf="@id/test_monday_course"
+        android:background="@drawable/course_text_view_bg"
+        />
+    <TextView android:id="@+id/test_wednesday_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wed"
+        android:layout_toRightOf="@id/test_tuesday_course"
+        android:background="@drawable/course_text_view_bg"
+        />
+    <TextView android:id="@+id/test_thursday_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thu"
+        android:layout_toRightOf="@id/test_wednesday_course"
+        android:background="@drawable/course_text_view_bg"
+        />
+    <TextView android:id="@+id/test_friday_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fri"
+        android:layout_toRightOf="@id/test_thursday_course"
+        android:background="@drawable/course_table_last_colum"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_empty"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_course_rl"
+            >
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
